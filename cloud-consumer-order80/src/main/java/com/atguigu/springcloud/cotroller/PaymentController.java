@@ -12,13 +12,13 @@ import org.springframework.web.client.RestTemplate;
 @Slf4j
 public class PaymentController {
 
-    private static final String  PROVIDER_URL="http://localhost:8003";
+    private static final String  PROVIDER_URL="http://CLOUD-PAYMENT-SERVICE";
 
     @Autowired
     private RestTemplate template;
 
     @GetMapping("/consumer/payment/create")
-    public CommonResult create(@RequestBody Payment payment){
+    public CommonResult create( Payment payment){
 
 
 
