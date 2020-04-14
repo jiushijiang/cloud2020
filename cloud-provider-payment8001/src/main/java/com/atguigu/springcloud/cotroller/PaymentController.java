@@ -3,13 +3,11 @@ package com.atguigu.springcloud.cotroller;
 import com.atguigu.springcloud.entity.CommonResult;
 import com.atguigu.springcloud.entity.Payment;
 import com.atguigu.springcloud.service.PaymentService;
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -74,4 +72,24 @@ public class PaymentController {
 
 
     }
+
+
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLB() {
+        return port;
+    }
+
+
+    @GetMapping(value = "/payment/feignTimeOut")
+    public String feignTimeOut(){
+
+        try {
+            Thread.sleep(3000);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return port;
+    }
+
 }
