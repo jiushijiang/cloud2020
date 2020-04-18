@@ -6,4 +6,4 @@
     -- cloud-provider-payment8001：生产者，此处用于用作集群
     -- cloud-provider-payment8003：生产者，集群
     -- cloud-consumer-feign-order80 负载均衡消费者
-    -- 新测试。。。。
+
