@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-//测试1
+//测试
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
