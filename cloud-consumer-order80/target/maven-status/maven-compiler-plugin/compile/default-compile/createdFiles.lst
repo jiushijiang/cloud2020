@@ -1,3 +1,6 @@
 com\atguigu\springcloud\cotroller\PaymentController.class
+com\atguigu\springcloud\lb\impl\LB.class
+com\atguigu\myrule\MySelfRule.class
 com\atguigu\springcloud\config\ApplicationContextConfig.class
 com\atguigu\springcloud\PaymentMain80.class
+com\atguigu\springcloud\lb\LoadBalancer.class
