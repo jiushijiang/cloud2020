@@ -13,4 +13,7 @@
     -- cloud-config-center-3344  配置服务器
     -- cloud-config-client-3355  springConfig、bus总线配置客户端
     -- cloud-config-client-3366  springConfig、bus总线配置客户端
+    -- cloud-stream-rabbitmq-provider8801：消息驱动生产者
+    -- cloud-stream-rabbitmq-consumer8802：消息驱动消费者
+    -- cloud-stream-rabbitmq-consumer8803：消息驱动消费者
     -- 新测试。。。。
