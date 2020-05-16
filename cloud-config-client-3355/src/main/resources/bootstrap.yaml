@@ -1,0 +1,32 @@
+server:
+  port: 3355
+
+spring:
+  application:
+    name:  cloud-config-clieant #注册进Eureka服务器的微服务名
+  cloud:
+    config:
+      ####读取分支
+      label: master
+      name: config #名字
+      profile: dev #-后缀
+      uri: http://localhost:3344
+#rabbitmq相关配置
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#注册中心
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
